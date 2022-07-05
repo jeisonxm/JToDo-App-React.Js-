@@ -15,11 +15,11 @@ function App() {
     <>
       <TodoCounter />
       <TodoSearch />
-      <TodoList />
-      {todos.map((todo) => (
-        <TodoItem key={todo.text} text={todo.text} />
-      ))}
-      <TodoList />
+      <TodoList>
+        {todos.map((todo) => (
+          <TodoItem key={todo.text} text={todo.text} />
+        ))}
+      </TodoList>
       <CreateTodoButtom />
     </>
   );

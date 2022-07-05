@@ -1,0 +1,40 @@
+.todoItem-container{
+  display: flex;
+  align-items: center;
+  max-width: 335px;
+  margin: 0 20px;
+  height: 55px;
+  background-color: var(--task-color);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.todoItem-container p{
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 500;
+}
+.todoItem-icon{
+  color: rgba(0, 0, 0, 0.468);
+  cursor: pointer;
+  transition-duration: 300ms;
+  font-size: 2rem;
+}
+
+
+.todoItem-delete{
+  position: relative;
+  bottom: 10px;
+  left: 260px
+}
+.todoItem-delete:hover{
+  color: rgba(158, 24, 24, 0.773);
+}
+.todoItem-complete{
+  position: relative;
+right: 260px
+}
+.todoItem-complete:hover{
+  color: rgb(203, 148, 38);
+}

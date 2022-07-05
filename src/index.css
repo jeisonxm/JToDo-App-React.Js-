@@ -1,10 +1,51 @@
+:root{
+  --backgroun-color: #222222;
+  --gradiente-icon: linear-gradient(180deg, #FFA25E 0%, rgba(252, 164, 99, 0.971875) 30.42%, rgba(138, 227, 255, 0) 90%);
+  --gradient-icon__reverse: linear-gradient(0deg, #FFA25E 0%, rgba(252, 164, 99, 0.971875) 30.42%, rgba(138, 227, 255, 0) 90%);
+  --gradient-button: linear-gradient(92.42deg, rgba(255, 215, 112, 0.74) 15.13%, rgba(255, 162, 94, 0.74) 97.21%);
+  --button-color: #FFD770;
+  --task-color: #CECECE;
+  --inactive-complete-button: #00000023;
+  --tittle-font: 'Martel Sans';
+  --body-font: 'Raleway';
+  --input-color:#A4A4A4;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  background-color: var(--backgroun-color);
+  color: white;
+}
+/* .inactive{
+  display: none;
+} */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--body-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.header-circle-logo{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background:var(--gradiente-icon);
+  margin-right: 13px;
+}
+header .header-tittle{
+  font-family: var(--tittle-font);
+  font-size: 2.4rem;
 }
 
 code {

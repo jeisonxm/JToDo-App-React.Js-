@@ -1,0 +1,7 @@
+.TodoCounter{
+  font-family: var(--body-font);
+  font-size: 1.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 500;
+}
