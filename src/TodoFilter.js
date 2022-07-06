@@ -1,15 +1,18 @@
 import React from "react";
 import "./TodoFilter.css";
-export default function TodoFilter() {
+export default function TodoFilter({ searchValue, setSearchValue }) {
+  const onSearchValueChange = (event) => {
+    setSearchValue(event.target.value);
+  };
   return (
     <>
       <button className="filterButon">
         <i className="fa-solid fa-filter"></i>
       </button>
-      <section className="filters-window inactive">
-        <article className="filters-title-container">
+      <section className="filters-window">
+        {/* <article className="filters-title-container">
           <h1 className="filters-title">FILTERS</h1>
-        </article>
+        </article> */}
         <article className="filters-container">
           {/* SEARCH FILTER  */}
           <section className="filters-search filters-items inactiveForm">
@@ -17,9 +20,12 @@ export default function TodoFilter() {
             <input
               type="text"
               name=""
+              value={searchValue}
               id="filters-search-input"
+              onChange={onSearchValueChange}
               placeholder="Write here"
             />
+
             <span className="filters-search-icon">
               <i className="fa-solid fa-magnifying-glass"></i>
             </span>

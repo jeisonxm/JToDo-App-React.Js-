@@ -4,13 +4,13 @@ import "./TodoCounter.css";
 //   color: "red",
 //   backgroundColor: "yellow",
 // };
-function TodoCounter() {
+function TodoCounter({ total, completed }) {
   return (
     <h2
       className="TodoCounter"
       // style={estilos}
     >
-      Has completado 2 de 3 TODO
+      Congratulations you have completed {completed} tasks of {total}
     </h2>
   );
 }
