@@ -16,7 +16,7 @@
   font-weight: 500;
 }
 .todoItem-icon{
-  color: rgba(0, 0, 0, 0.468);
+  color: rgba(0, 0, 0, 0.278);
   cursor: pointer;
   transition-duration: 300ms;
   font-size: 2rem;
@@ -26,14 +26,15 @@
 .todoItem-delete{
   position: relative;
   bottom: 10px;
-  left: 260px
+  left: 93%;
+  font-size: 1.5rem;
 }
 .todoItem-delete:hover{
   color: rgba(158, 24, 24, 0.773);
 }
 .todoItem-complete{
   position: relative;
-right: 260px
+right: 90%
 }
 .todoItem-complete:hover{
   color: rgb(203, 148, 38);

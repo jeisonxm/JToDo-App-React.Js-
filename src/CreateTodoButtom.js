@@ -4,9 +4,9 @@ export default function CreateTodoButtom() {
   return (
     <>
       <button className="addButton">
-        <i class="fa-solid fa-circle-plus"></i>
+        <i className="fa-solid fa-circle-plus"></i>
       </button>
-      <section className="newTask-container inactive">
+      <section className="newTask-container ">
         <article className="newTask-container__flex">
           <h1 className="newTask-title">NEW TASK</h1>
           <article className="newTask-box">

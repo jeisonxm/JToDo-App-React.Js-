@@ -27,7 +27,9 @@
   border-radius: 10px 10px 0px 0px;
   padding: 0 10px;
   align-self: center;
+  font-family: var(--body-font);
 }
+
 .newTask-input:focus-visible{
   outline-color: var(--button-color);
   outline-style: inset;

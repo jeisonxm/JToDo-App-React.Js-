@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import { TodoCounter } from "./TodoCounter";
-import TodoSearch from "./TodoSearch";
+import TodoFilter from "./TodoFilter";
 import TodoList from "./TodoList";
 import TodoItem from "./TodoItem";
 import CreateTodoButtom from "./CreateTodoButtom";
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <TodoCounter />
-      <TodoSearch />
+      <TodoFilter />
       <TodoList>
         {todos.map((todo) => (
           <TodoItem key={todo.text} text={todo.text} />
