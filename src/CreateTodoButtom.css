@@ -34,9 +34,13 @@
   outline-color: var(--button-color);
   outline-style: inset;
 }
+.newTask-footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+}
 .newTask-date-container{
   display: flex;
-  margin: 0 15px;
   color: black;
   font-style: italic;
   align-items: center;
@@ -72,11 +76,12 @@
   font-size: 3.7rem;
   right: 25px;
 bottom: 19.5px;
-color: var(--button-color);
+color: var(--button-color-inactive);
 transition-duration: 300ms;
 background: none;
 border: none;
 }
 .addButton:hover{
+  color: var(--button-color-active);
   font-size: 4rem;
 }

@@ -6,13 +6,13 @@ export default function TodoFilter() {
       <button className="filterButon">
         <i className="fa-solid fa-filter"></i>
       </button>
-      <section className="filters-window">
+      <section className="filters-window inactive">
         <article className="filters-title-container">
           <h1 className="filters-title">FILTERS</h1>
         </article>
         <article className="filters-container">
           {/* SEARCH FILTER  */}
-          <div className="filters-search filters-items inactiveForm">
+          <section className="filters-search filters-items inactiveForm">
             <h3 className="filters-search-title">SEARCH</h3>
             <input
               type="text"
@@ -23,44 +23,48 @@ export default function TodoFilter() {
             <span className="filters-search-icon">
               <i className="fa-solid fa-magnifying-glass"></i>
             </span>
-          </div>
+          </section>
 
           {/* PRIORITY FILTER */}
-          <div className="filters-priority filters-items filter-items--inactive">
-            <div className="filter-priority-inactiveForm inactiveForm">
+          <section className="filters-priority filters-items filter-items--inactive">
+            <article className="filter-priority-inactiveForm inactiveForm">
               <h3 className="filters-priority-title">PRIORITY</h3>
               <span className="filter-icon--expand">
                 <i className="fa-solid fa-plus"></i>
               </span>
-            </div>
+            </article>
             {/* PRIORITY ACTIVE FORM */}
-            <div className="filter-priority-activeForm">
-              <h3 className="filters-priority-title">PRIORITY</h3>
-              <span className="filter-icon--contract">
-                <i className="fa-solid fa-x"></i>
-              </span>
+            <article className="filter-priority-activeForm inactive">
+              <div className="filter-priority-header">
+                <h3 className="filters-priority-title">PRIORITY</h3>
+                <span className="filter-icon--contract">
+                  <i className="fa-solid fa-x"></i>
+                </span>
+              </div>
               <select name="" id="filter-priority-select">
                 <option value="Important">Important</option>
                 <option value="Normal">Normal</option>
                 <option value="Inessential">Inessential</option>
               </select>
-            </div>
-          </div>
+            </article>
+          </section>
 
           {/* DATE FILTER */}
-          <div className="filters-date filters-items filter-items--inactive">
-            <div className="filter-date-inactiveForm inactiveForm">
+          <section className="filters-date filters-items filter-items--inactive">
+            <article className="filter-date-inactiveForm inactiveForm">
               <h3 className="filters-priority-title">DATE</h3>
               <span className="filter-icon--expand">
                 <i className="fa-solid fa-plus"></i>
               </span>
-            </div>
+            </article>
             {/* DATE ACTIVE FORM */}
-            <div className="filters-date-activeForm inactive">
-              <h3 className="filters-priority-title">DATE</h3>
-              <span className="filter-icon--contract">
-                <i className="fa-solid fa-x"></i>
-              </span>
+            <article className="filters-date-activeForm inactive">
+              <div className="filters-date-header">
+                <h3 className="filters-priority-title">DATE</h3>
+                <span className="filter-icon--contract">
+                  <i className="fa-solid fa-x"></i>
+                </span>
+              </div>
               <form className="filters-date-form" action="">
                 <label htmlFor="day" className="filters-date-day">
                   <h3>DAY:</h3>
@@ -79,8 +83,8 @@ export default function TodoFilter() {
                   />
                 </label>
               </form>
-            </div>
-          </div>
+            </article>
+          </section>
           {/* FILTER BUTTON */}
           <article className="filters-footer">
             <div className="circle-logo"></div>

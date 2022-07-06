@@ -3,7 +3,8 @@
   --gradiente-icon: linear-gradient(180deg, #FFA25E 0%, rgba(252, 164, 99, 0.971875) 30.42%, rgba(138, 227, 255, 0) 90%);
   --gradient-icon__reverse: linear-gradient(0deg, #FFA25E 0%, rgba(252, 164, 99, 0.971875) 30.42%, rgba(138, 227, 255, 0) 90%);
   --gradient-button: linear-gradient(92.42deg, rgba(255, 215, 112, 0.74) 15.13%, rgba(255, 162, 94, 0.74) 97.21%);
-  --button-color: #FFD770;
+  --button-color-inactive: #ffd670df;
+  --button-color-active: #ffd670;
   --task-color: #CECECE;
   --inactive-complete-button: #00000023;
   --tittle-font: 'Martel Sans';
@@ -20,9 +21,9 @@ html{
   background-color: var(--backgroun-color);
   color: white;
 }
-/* .inactive{
-  display: none;
-} */
+.inactive{
+  display: none !important;
+}
 body {
   margin: 0;
   font-family: var(--body-font);

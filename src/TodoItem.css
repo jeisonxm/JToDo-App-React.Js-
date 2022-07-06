@@ -25,17 +25,17 @@
 
 .todoItem-delete{
   position: relative;
-  bottom: 10px;
-  left: 93%;
-  font-size: 1.5rem;
+  bottom: 13px;
+  left: 92%;
+  font-size: 1.8rem;
 }
 .todoItem-delete:hover{
-  color: rgba(158, 24, 24, 0.773);
+  color: rgb(158, 24, 24);
 }
 .todoItem-complete{
   position: relative;
 right: 90%
 }
 .todoItem-complete:hover{
-  color: rgb(203, 148, 38);
+  color: rgb(59, 132, 23);
 }

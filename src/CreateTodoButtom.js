@@ -6,7 +6,7 @@ export default function CreateTodoButtom() {
       <button className="addButton">
         <i className="fa-solid fa-circle-plus"></i>
       </button>
-      <section className="newTask-container ">
+      <section className="newTask-container inactive">
         <article className="newTask-container__flex">
           <h1 className="newTask-title">NEW TASK</h1>
           <article className="newTask-box">
@@ -15,11 +15,13 @@ export default function CreateTodoButtom() {
               placeholder="Add your new task"
               className="newTask-input"
             />
-            <div className="newTask-date-container">
-              <div className="newTask-circle-logo"></div>
-              <p className="newTask-date">Lunes 5 de agosto</p>
+            <section className="newTask-footer">
+              <article className="newTask-date-container">
+                <div className="newTask-circle-logo"></div>
+                <p className="newTask-date">Lunes 5 de agosto</p>
+              </article>
               <button className="newTask-button">Add</button>
-            </div>
+            </section>
           </article>
         </article>
       </section>
