@@ -33,6 +33,7 @@ justify-content: center;
   background-color: var(--task-color);
   color: black;
   margin: 0 auto;
+  margin-top: 15px;
   border-radius: 15px;
   font-family: var(--tittle-font);
 }
@@ -63,9 +64,9 @@ justify-content: center;
   display: none;
 }
 #filters-search-input{
-  padding: 3px;
+  padding: 2.5px;
   padding-left: 6px;
-  width: 65%;
+  width: 60%;
   border: none;
   border-radius: 10px;
   background: #D9D9D9;

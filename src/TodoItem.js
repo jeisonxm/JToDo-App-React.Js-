@@ -3,17 +3,13 @@ import "./TodoItem.css";
 
 export default function TodoItem(props) {
   const onComplete = () => {
-    alert("aqui completeamos " + props.text);
+    props.onComplete();
   };
   const onDelete = () => {
-    alert("aqui borraste " + props.text);
+    props.onDelete();
   };
   return (
-    <li
-      className={`todoItem-container ${
-        props.completed && "todoItem-completed"
-      }`}
-    >
+    <li className={`todoItem-container ${props.completed && props.estatus}`}>
       <span className="todoItem-delete todoItem-icon" onClick={onDelete}>
         <i className="fa-solid fa-xmark"></i>
       </span>

@@ -39,3 +39,18 @@ right: 90%
 .todoItem-complete:hover{
   color: rgb(59, 132, 23);
 }
+.todoItem-completed{
+  background-color: #868686;
+  transition-duration: 500ms;
+}
+.todoItem-completed .todoItem-complete{
+  color: rgba(0, 0, 0, 0.695);
+}
+.todoItem-completed p{
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  text-decoration: line-through;
+}
+/* .todoItem-completed .todoItem-complete:hover{
+  color: orange;
+} */
