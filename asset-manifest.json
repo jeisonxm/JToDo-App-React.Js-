@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/JToDo-App-React.Js-/static/css/main.35fc9111.css",
+    "main.js": "/JToDo-App-React.Js-/static/js/main.4d32d6b2.js",
+    "index.html": "/JToDo-App-React.Js-/index.html",
+    "main.35fc9111.css.map": "/JToDo-App-React.Js-/static/css/main.35fc9111.css.map",
+    "main.4d32d6b2.js.map": "/JToDo-App-React.Js-/static/js/main.4d32d6b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35fc9111.css",
+    "static/js/main.4d32d6b2.js"
+  ]
+}
