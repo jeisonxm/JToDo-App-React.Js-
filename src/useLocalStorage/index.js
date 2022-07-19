@@ -27,6 +27,8 @@ function useLocalStorage(itemName, initialValue) {
       }
     }, 1000);
   });
+
+  // Aqui guardamos un item, logramos obtener una funcion que nos permite meter cualquier cosa que queramos guardar en nuestro item, al meterlo entra el itemName.
   const saveItem = (newItem) => {
     try {
       const stringItem = JSON.stringify(newItem);

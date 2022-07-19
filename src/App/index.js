@@ -9,6 +9,8 @@ import { TodoProvider } from "../TodoContext";
 //   { text: "Tomar el curso de intro", completed: false },
 //   { text: "llorar con mi llorona", completed: false },
 // ];
+//! PARA CREAR COMPONENTES USAR 'rfc'
+// rfc react functional components
 
 function App() {
   //* UI

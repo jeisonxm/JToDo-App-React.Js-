@@ -1,75 +1,4 @@
-.newTask-container__flex{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.newTask-title{
-  font-family: var(--tittle-font);
-  font-weight: 800;
-  font-size: 3.2rem;
-}
-.newTask-box{
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  height: 132px;
-  background: var(--task-color);
-  border-radius: 15px;
-}
-.newTask-input{
-  width: 90%;
-  height: 82px;
-  margin: 10px 15px;
-  border: 0;
-  background-color: var(--input-color);
-  border-radius: 10px 10px 0px 0px;
-  padding: 0 10px;
-  align-self: center;
-  font-family: var(--body-font);
-}
 
-.newTask-input:focus-visible{
-  outline-color: var(--button-color);
-  outline-style: inset;
-}
-.newTask-footer{
-  display: flex;
-  justify-content: space-between;
-  margin: 0 15px;
-}
-.newTask-date-container{
-  display: flex;
-  color: black;
-  font-style: italic;
-  align-items: center;
-}
-.newTask-circle-logo{
-  width: 20px;
-  height: 20px;
-  background: var(--gradient-icon__reverse);
-  border-radius: 50%;
-  margin-right: 9px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-.newTask-button{
-  margin-left: 10%;
-  width: 100px;
-  height: 25px;
-  border: none;
-  background: var(--gradient-button);
-  color: white;
-  text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  
-  border-radius: 96px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  cursor: pointer;
-  transition-duration: 300ms;
-}
-.newTask-button:hover{
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
 .addButton{
   position: fixed;
   cursor: pointer;
@@ -80,8 +9,12 @@ color: var(--button-color-inactive);
 transition-duration: 300ms;
 background: none;
 border: none;
+z-index: 2;
 }
 .addButton:hover{
-  color: var(--button-color-active);
   font-size: 4rem;
+}
+.activate{
+  transform: rotate(45deg);
+  color: #c66950;
 }

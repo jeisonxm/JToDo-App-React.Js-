@@ -18,6 +18,7 @@ function TodoProvider(props) {
     loading,
     error,
   } = useLocalStorage("TODOS_V1", []);
+  const [openModal, setOpenModal] = React.useState(false);
   const totalTodos = todos.length;
   //! FUNCTIONS
 
@@ -67,6 +68,15 @@ function TodoProvider(props) {
     }
   }
 
+  const addTodo = (texts) => {
+    const newTodos = [...todos];
+    newTodos.push({
+      completed: false,
+      text: texts,
+    });
+    saveTodos(newTodos);
+  };
+
   return (
     <TodoContext.Provider
       value={{
@@ -85,6 +95,9 @@ function TodoProvider(props) {
         deleteTodos,
         estateItemFunction,
         itemEstatus,
+        openModal,
+        setOpenModal,
+        addTodo,
       }}
     >
       {props.children}

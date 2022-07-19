@@ -1,0 +1,46 @@
+.loadingTodo-container{
+  display: flex;
+    align-items: center;
+    max-width: 335px;
+    margin: 0 20px;
+    height: 55px;
+    background-color: #e9e9e9;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.loadingTodo-check{
+  background-color: #CECECE;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  right: -5%;
+}
+
+.loadingTodo-text{
+  width: 70%;
+  height: 15px;
+  background-color: #CECECE;
+  margin-left: 10%;
+}
+
+.loadingTodo-text,.loadingTodo-check{
+  background: linear-gradient(90deg, #CECECE,rgb(244, 232, 232));
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+
+}
+
+@keyframes loadingAnimation{
+  0%{
+    background-position: 0% 50%;
+  }
+
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}

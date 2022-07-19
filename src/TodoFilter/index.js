@@ -4,12 +4,20 @@ export default function TodoFilter({ searchValue, setSearchValue }) {
   const onSearchValueChange = (event) => {
     setSearchValue(event.target.value);
   };
+
+  const [divStatus, setDivStatus] = React.useState(false);
+  const showFilterSection = () => {
+    setDivStatus(!divStatus);
+  };
   return (
     <>
-      <button className="filterButon">
+      <button
+        onClick={showFilterSection}
+        className={`filterButon ${!!divStatus && "filterButon--close"}`}
+      >
         <i className="fa-solid fa-filter"></i>
       </button>
-      <section className="filters-window">
+      <section className={`filters-window ${!divStatus && "inactive"}`}>
         {/* <article className="filters-title-container">
           <h1 className="filters-title">FILTERS</h1>
         </article> */}
@@ -32,7 +40,7 @@ export default function TodoFilter({ searchValue, setSearchValue }) {
           </section>
 
           {/* PRIORITY FILTER */}
-          <section className="filters-priority filters-items filter-items--inactive">
+          <section className="filters-priority filters-items filter-items--inactive inactive">
             <article className="filter-priority-inactiveForm inactiveForm">
               <h3 className="filters-priority-title">PRIORITY</h3>
               <span className="filter-icon--expand">
@@ -56,7 +64,7 @@ export default function TodoFilter({ searchValue, setSearchValue }) {
           </section>
 
           {/* DATE FILTER */}
-          <section className="filters-date filters-items filter-items--inactive">
+          <section className="filters-date filters-items filter-items--inactive inactive">
             <article className="filter-date-inactiveForm inactiveForm">
               <h3 className="filters-priority-title">DATE</h3>
               <span className="filter-icon--expand">
@@ -92,9 +100,9 @@ export default function TodoFilter({ searchValue, setSearchValue }) {
             </article>
           </section>
           {/* FILTER BUTTON */}
-          <article className="filters-footer">
+          <article className="filters-footer inactive">
             <div className="circle-logo"></div>
-            <button className="filter-add-button">ADD</button>
+            <button className="filter-add-button ">ADD</button>
           </article>
         </article>
       </section>

@@ -5,12 +5,18 @@
   left: 25px;
 bottom: 19.5px;
 color: var(--button-color-inactive);
-transition-duration: 300ms;
+transition-duration: 500ms;
 background: none;
 border: none;
 }
+
+.filterButon--close{
+  transform: rotate(-180deg);
+  color: #c66950;
+}
+
+
 .filterButon:hover{
-  color: var(--button-color-active);
   font-size: 4rem;
 }
 .filters-title-container{
@@ -30,7 +36,7 @@ justify-content: center;
   padding: 15px;
   width: 85%;
   gap: 10px;
-  background-color: var(--task-color);
+  /* background-color: var(--task-color); */
   color: black;
   margin: 0 auto;
   margin-top: 15px;
