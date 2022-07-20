@@ -13,14 +13,15 @@
 .newTask-box{
   display: flex;
   flex-direction: column;
-  width: 95%;
-  height: 132px;
+  width: 150%;
+  height: 150px;
   background: var(--task-color);
   border-radius: 15px;
 }
 .newTask-input{
   width: 90%;
-  height: 82px;
+  height: 68%;
+  font-size: 1.4rem;
   margin: 10px 15px;
   border: 0;
   background-color: var(--input-color);
